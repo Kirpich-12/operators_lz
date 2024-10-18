@@ -19,6 +19,10 @@ while sam < poi:
         break
     sam += (1/ n ** 2)
     n += 1
+    if s - l < 1:
+        n = 1
+    if s - sam < s - sam - (1 / (n - 1) ** 2):
+        n = 
 else:
     n -= 1
 
