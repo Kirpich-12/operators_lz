@@ -17,18 +17,15 @@ while sam < poi:
     if poi > 1.65:  #защита от бесконечного цикла
         print('Уход в бесконечный цикл, замените значение финальной суммы')
         break
-    sam += (1/ n ** 2)
-    n += 1
-    if s - l < 1:
-        n = 1
-    
-else:
-    if n != 1:
-        if sam - float(s) < float(s) - (sam - (1/ (n -1) ** 2)):
-            n = n - 1
     else:
-        n == 0
-    n -= 1
+        sam += dec(1) / dec(n) ** 2
+        n += 1   
+else:     
+     if sam - poi > poi - (sam - dec(1) / dec(n) ** 2):
+        n -= 1
+     n -= 1
+     
+
 
 #вывод данных(выводит 0 при беск. цикле)
 output_data = open('output.txt', 'w')
