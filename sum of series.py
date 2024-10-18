@@ -21,9 +21,10 @@ while sam < poi:
     n += 1
     if s - l < 1:
         n = 1
-    if s - sam < s - sam - (1 / (n - 1) ** 2):
-        n = 
+    
 else:
+    if sam - float(s) < float(s) - (sam - (1/ (n -1) ** 2)):
+        n = n - 1
     n -= 1
 
 #вывод данных(выводит 0 при беск. цикле)
